@@ -1,12 +1,24 @@
 header {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-0.3.5&s=c093e3652e50c9eb10ce191a7e1b6773&auto=format&fit=crop&w=1053&q=80');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1482154905330-d746d3a7ca4a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c004e02b4f05537362ee1c90544e49e1&auto=format&fit=crop&w=1050&q=80');
     background-size: cover;
     height: 100vh;
 }
 
-.title {
+.banner {
     position: absolute;
-    top: 50%;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Kurale', serif;
+    top: 1vh;
+    left: 3vh;
+    position: scroll;
+}
+
+.title {
+    padding: 0vh;
+    margin: 0vh;
+    position: relative;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -15,8 +27,55 @@ header {
 
 h1 {
     /* text-transform: uppercase; */
-    margin: 0;
-    font-size: 3rem;
+    padding: 1vh;
+    font-size: 2.75rem;
     white-space: nowrap;
-    font-family:'Kurale', serif;
+    font-family: 'Amiri', serif;
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.15em;
+    /* text-transform: uppercase; */
+}
+
+h2 {
+    /* font-weight: 500; */
+    margin: 0 0 1em 0;
+    padding: 1px;
+    font-size: 1.4rem;
+    font-family: 'Arapey', serif;
+    position: relative;
+    text-align: center;
+    /* border-bottom: solid 2px; */
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  height: 0.1em;
+  background: white;
+  /*top moves the bar up and down*/
+  top: 130%;
+  /* !!!adjust the width to alight to the text */
+  width: 23%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h3 {
+    position: relative;
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    font-family: 'Arapey', serif;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 0.05em;
+}
+
+p {
+    letter-spacing: 0.15em;
+    font-family: 'Arapey', serif;
 }
